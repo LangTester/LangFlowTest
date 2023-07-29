@@ -5,9 +5,9 @@ import pip
 
 def install(package):
     if hasattr(pip, 'main'):
-        pip.main(['install', streamlit-chat])
+        pip.main(['install', 'streamlit-chat'])
     else:
-        pip._internal.main(['install', streamlit-chat])
+        pip._internal.main(['install', 'streamlit-chat'])
 
 import logging
 import sys
@@ -108,5 +108,4 @@ def generate_response(prompt):
 
 
 if __name__ == "__main__":
-    install('argh')
     main()
