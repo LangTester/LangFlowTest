@@ -9,10 +9,6 @@ def install(package):
     else:
         pip._internal.main(['install', streamlit-chat])
 
-# Example
-if __name__ == '__main__':
-    install('argh')
-
 import logging
 import sys
 import time
@@ -112,4 +108,5 @@ def generate_response(prompt):
 
 
 if __name__ == "__main__":
+    install('argh')
     main()
