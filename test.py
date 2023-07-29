@@ -1,4 +1,4 @@
-!pip install streamlit-chat
+pip install streamlit-chat
 
 import logging
 import sys
