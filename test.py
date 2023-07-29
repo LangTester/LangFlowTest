@@ -1,9 +1,17 @@
 
 import subprocess
 import sys
+import pip
 
 def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "streamlit-chat"])
+    if hasattr(pip, 'main'):
+        pip.main(['install', streamlit-chat])
+    else:
+        pip._internal.main(['install', streamlit-chat])
+
+# Example
+if __name__ == '__main__':
+    install('argh')
 
 import logging
 import sys
