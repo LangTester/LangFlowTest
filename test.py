@@ -1,3 +1,5 @@
+!pip install streamlit-chat
+
 import logging
 import sys
 import time
