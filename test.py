@@ -1,4 +1,9 @@
-pip install streamlit-chat
+
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "streamlit-chat"])
 
 import logging
 import sys
